@@ -1,0 +1,42 @@
+nav{
+    width: 18%;
+    height: 100vh;
+    background-color: #E6E8E6;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    justify-content:center;
+    align-items: center;
+    z-index: 12;
+}
+h4{
+    color: #3F403F;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px #3F403F;
+}
+nav ul{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;   
+    font-size: 1rem; 
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: #E6E8E6;
+}
+li{
+    background-color: #3F403F;
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+}
+nav ul li a:hover{
+    cursor:pointer;    
+    transition: all 2s ease-in;
+    color: blue;
+}
