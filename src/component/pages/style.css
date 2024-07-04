@@ -1,3 +1,60 @@
+:root{
+    --yello-color :  #eab41e ;
+    --blue-for-right : #082e4e ;
+    --text-color : rgb(212 234 233);
+
+}   
 .rightside{
     margin-left: 18%;
+}
+body{
+    background-color: #082e4e;
+    color: var(--text-color);
+}
+
+/* home page style  */
+
+.Home{
+    display: flex;
+    align-items: center;
+    justify-items:center ;
+    gap: 100px;
+    padding: 150px 80px;
+    padding-left: 120px;
+}
+.Home  span{
+    color: var(--yello-color);
+}
+.Home .left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Home div{
+    display: flex;
+    gap: 40px;    
+}
+.Home button{
+    width: 200px;
+    padding: 8px 40px;
+    font-weight: 600;
+}
+#getInTouch{
+    color: var(--text-color);
+    background-color: var(--yello-color);
+    outline: none;
+    border: 1px solid var(--yello-color);
+}
+
+#ResumeDownload{
+    color: var(--yello-color);
+    background-color: var(--blue-for-right);
+    border: 1px solid var(--yello-color);
+}
+#ResumeDownload a{
+    color: var(--yello-color);
+    background-color: inherit;
+}
+.devloper{
+    width: 300px;
 }

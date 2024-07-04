@@ -1,7 +1,13 @@
+:root{
+    --yello-color :  #eab41e ;
+    --blue-for-right : #082e4e ;
+    --text-color : rgb(212 234 233);
+
+}    
 nav{
     width: 18%;
     height: 100vh;
-    background-color: #E6E8E6;
+    background-color: rgb(14 39 60);
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -9,11 +15,11 @@ nav{
     overflow: hidden;
     justify-content:center;
     align-items: center;
-    z-index: -1;
+    z-index: 1;
 
 }
 h4{
-    color: #3F403F;
+    color: rgb(212 234 233);
     font-size: 1.5rem;
     text-shadow: 1px 1px #3F403F;
 }
@@ -31,7 +37,7 @@ a{
     color: #E6E8E6;
 }
 li{
-    background-color: #3F403F;
+    border: 1px solid #eab41e;
     border-radius: 30px;
     padding: 5px;
     text-align: center;
