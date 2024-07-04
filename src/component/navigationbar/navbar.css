@@ -9,7 +9,8 @@ nav{
     overflow: hidden;
     justify-content:center;
     align-items: center;
-    z-index: 12;
+    z-index: -1;
+
 }
 h4{
     color: #3F403F;
@@ -35,7 +36,7 @@ li{
     padding: 5px;
     text-align: center;
 }
-nav ul li a:hover{
+nav ul li :hover{
     cursor:pointer;    
     transition: all 2s ease-in;
     color: blue;
