@@ -1,8 +1,11 @@
-import "./style.css"
+import Techstack from "../otherCompo/techstack";
+import "./style.css";
 function Skill() {
   return (
     <div className="rightside">
-      <h1>Skill</h1>
+      <div className="skill">
+        <Techstack />
+      </div>
     </div>
   );
 }

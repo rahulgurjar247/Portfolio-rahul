@@ -1,0 +1,9 @@
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.social .image{
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,23 @@
+.card{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 30px  50px 30px;
+    background-color: rgb(14 39 60);
+    border-left:2px solid  ;
+}
+.card li{
+    list-style: none;
+    border-color: white;
+}
+.card h1{
+    color: #eab41e;
+}
+#technology{
+    color: #eab41e;
+}
+
+.card li:hover{
+    cursor: pointer;
+}

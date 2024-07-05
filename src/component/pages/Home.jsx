@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import icon from "../../assets/developer.png"
   
 const add = {
@@ -14,7 +15,12 @@ function Home() {
             Developer
           </h1>
           <div>
-            <button id="getInTouch"> Get In Touch</button>
+            <button id="getInTouch">
+              <li>
+                <NavLink to="/contact">Get In Touch </NavLink>
+              
+              </li>
+            </button>
             <button id="ResumeDownload">
               <a href="">Download resume</a>
             </button>
@@ -24,6 +30,7 @@ function Home() {
           <img src={add.address} className="devloper" alt="devloper rahul" />
         </div>
       </div>
+      
     </div>
   );
 }

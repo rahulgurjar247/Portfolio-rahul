@@ -19,9 +19,14 @@ body{
     align-items: center;
     justify-items:center ;
     gap: 100px;
-    padding: 150px 80px;
+    padding: 150px 80px 0px 150px ;
     padding-left: 120px;
 }
+.homesocial{
+    padding: 30px 80px;
+    padding-left: 120px;       
+}
+
 .Home  span{
     color: var(--yello-color);
 }
@@ -43,6 +48,7 @@ body{
     color: var(--text-color);
     background-color: var(--yello-color);
     outline: none;
+    list-style: none;
     border: 1px solid var(--yello-color);
 }
 
@@ -58,3 +64,83 @@ body{
 .devloper{
     width: 300px;
 }
+
+
+
+/* bro about style after this point */
+
+.about{
+    padding: 150px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.about h1{
+    padding-left: 5px;
+    border-left: 5px solid var(--yello-color);
+}
+.about .info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* padding-left: 10px; */
+    /* border-left: 3px solid var(--yello-color); */
+}
+.about .techstack{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.techstack .imagestech{
+    width: 500px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+
+/* skill style goes hear */
+ .skill{
+    padding: 150px;
+ }
+ .skill .techstack .imagestech{
+    display: flex;
+
+ }
+
+
+ /* project style */
+
+ .project{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+ }
+
+ /* cnotact style */
+
+ .contact{
+    text-align: center;
+ }
+
+
+ .achievement{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px;
+    align-items: flex-start;
+ }
+ .achievement div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+
+ }
