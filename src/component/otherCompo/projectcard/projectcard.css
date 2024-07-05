@@ -21,3 +21,26 @@
 .card li:hover{
     cursor: pointer;
 }
+@media screen and (max-width:600px) {
+    .card{
+    width: 300px;
+    gap: 15px;
+    padding: 30px 15px  50px 15px;
+    background-color: rgb(14 39 60);
+    border-left:2px solid  ;
+}
+.card li{
+    list-style: none;
+    border-color: white;
+}
+.card h1{
+    color: #eab41e;
+}
+#technology{
+    color: #eab41e;
+}
+
+.card li:hover{
+    cursor: pointer;
+}
+}

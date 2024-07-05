@@ -144,3 +144,72 @@ body{
     flex-wrap: wrap;
 
  }
+
+@media screen and (max-width:600px) {
+    .rightside{
+    margin-left: 0%;
+}
+.Home{
+    flex-direction:column-reverse ;
+    gap: 20px;
+    padding: 100px 50px ;
+}
+.Home .left{
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+}
+.Home div{
+    flex-direction: column;
+    gap: 20px;    
+}
+.Home button{
+    border-radius: 30px ;
+}
+.devloper{
+    width: 200px;
+}
+/* bro about style after this point */
+.about{
+    padding: 130px 30px;
+    gap: 20px;
+}
+.about .info{
+    gap: 15px;
+}
+.techstack .imagestech{
+    width: 300px;
+}
+/* skill style goes hear */
+ .skill{
+    padding: 150px 50px;
+ }
+ 
+ /* project style */
+
+ .project{
+    padding: 100px 30px;
+ }
+
+ /* cnotact style */
+
+ .contact{
+    text-align: center;
+ }
+
+
+ .achievement{
+    gap: 30px;
+    padding: 100px 30px;
+    align-items: flex-start;
+ }
+ .achievement div{
+    /* overflow: hidden; */
+    width: 350px;
+    gap: 20px;
+ }
+ .achievement div img{
+    width: 350px;
+ }
+
+} 
