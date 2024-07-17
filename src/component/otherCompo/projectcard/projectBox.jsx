@@ -6,7 +6,8 @@ const ProjectCard = ({heading , about,tech,url="#"}) => {
         <h1>{heading}</h1>
         <p>{about}</p>
         <p>
-          Technologies Used : <span id="technology"> {tech}</span>
+          Technologies Used : <span id="technology
+          "> {tech}</span>
         </p>
         <li>
           <a href={url}>Check out project... </a>

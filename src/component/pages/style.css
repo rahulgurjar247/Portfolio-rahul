@@ -69,11 +69,17 @@ body{
 
 /* bro about style after this point */
 
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+} 
 .about{
     padding: 150px 100px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 .about h1{
     padding-left: 5px;
@@ -144,6 +150,55 @@ body{
     flex-wrap: wrap;
 
  }
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    align-items: center;    
+} 
+.contact .downform{
+    width: 400px;
+    font-size: 1rem;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* border: 1px solid var(--yello-color); */
+}
+.contact .downform input{
+    /* background-color: var(--blue-for-right); */
+    padding: 10px 10px ;
+    outline: none;
+    border: 0px;
+    border-radius: 5px;
+}
+.contact .downform button{
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #eab41e;
+}
+textarea{
+    height: 120px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    outline: none;
+}
+.social{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (max-width:600px) {
     .rightside{

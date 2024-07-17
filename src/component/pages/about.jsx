@@ -1,3 +1,4 @@
+import Social from "../otherCompo/socialmedia/social";
 import Techstack from "../otherCompo/techstack";
 // }
 function About() {
@@ -18,6 +19,10 @@ function About() {
           </p>
         </div>
         <Techstack />
+        <div className="socialmedia">
+          <h1>Hear are MY social media</h1>
+          <Social />
+        </div>
       </div>
     </div>
   );
