@@ -5,6 +5,8 @@ import tailwindcss from "../../assets/tailwindcss.svg";
 import vscode from "../../assets/vscode.svg";
 import node from "../../assets/node.svg";
 import mysql from "../../assets/mysql.svg";
+import express from "../../assets/express.svg";
+
 
 const Techstack = () => {
     return (
@@ -19,6 +21,7 @@ const Techstack = () => {
             <img src={tailwindcss} alt="" />
             <img src={mysql} alt="" />
             <img src={vscode} alt="" />
+            <img src={express} alt="" />
           </div>
         </div>
       </>

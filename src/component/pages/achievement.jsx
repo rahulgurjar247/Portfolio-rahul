@@ -11,9 +11,9 @@ function Achievement() {
           />
         </div>
         <div>
-        <img
-          src="https://leetcard.jacoblin.cool/Rahul_gurjar_247?theme=unicorn"
-          alt=""
+          <img
+            src="https://leetcard.jacoblin.cool/Rahul_gurjar_247?theme=unicorn"
+            alt="Rahul Gurjar's leetcode stats bro net chalu ker"
           />
         </div>
       </div>
