@@ -1,4 +1,11 @@
 import "./projectcard.css"
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import Flip from "gsap/Flip";
+import Draggable from "gsap/Draggable";
+
+gsap.registerPlugin(ScrollTrigger,Draggable,Flip)
+
 const ProjectCard = ({heading , about,tech,url="#"}) => {
   return (
     <>

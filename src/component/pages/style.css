@@ -157,6 +157,9 @@ body{
     padding: 100px;
     align-items: center;    
 } 
+.contact textarea{
+    resize: none;
+}
 .contact .downform{
     width: 400px;
     font-size: 1rem;

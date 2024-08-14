@@ -1,10 +1,15 @@
 import "../navigationbar/navbar.css";
 import { NavLink } from "react-router-dom";
+import icon from "../../assets/developer.png";
 const Navbar = () => {
   return (
     <>
       <nav>
+        <div className="navImg">
+        <img src={icon} alt="devloper rahul" />
         <h4>Rahul gurjar</h4>
+
+        </div>
         <ul>
           <li>
             <NavLink to="/">Home</NavLink>
