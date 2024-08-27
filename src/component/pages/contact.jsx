@@ -1,49 +1,66 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Social from "../otherCompo/socialmedia/social";
 
 function Contact() {
-  const access_key = "143dce79-4028-4cfe-b340-b08b488c7f3b";
+  const nameRef = useRef();
+  const numRef = useRef();
+  const msgRef = useRef();
+
   const [formData, setformData] = useState({
     name: "",
     mobile: "",
-    msg :""
-  })
+    msg: "",
+  });
 
   const handlechange = (e) => {
-    setformData({ ...formData, [e.target.name]: e.target.value })
-  }
+    setformData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        ...formData,
-        access_key: "143dce79-4028-4cfe-b340-b08b488c7f3b",
-      }),
-    });
-    if (response.ok) {
-      alert("message sent successfully")
-      setformData({ name: "", mobile: "", msg: "" });
+    if (formData.name && formData.mobile && formData.msg) {
+       const response = await fetch("https://api.web3forms.com/submit", {
+         method: "POST",
+         headers: {
+           "Content-Type": "application/json",
+         },
+         body: JSON.stringify({
+           ...formData,
+           access_key: "143dce79-4028-4cfe-b340-b08b488c7f3b",
+         }),
+       });
+
+       if (response.ok) {
+         alert("message sent successfully");
+         setformData({ name: "", mobile: "", msg: "" });
+         nameRef.current.value = "";
+         numRef.current.value = "";
+         msgRef.current.value = "";
+       } else {
+         alert("failed to send : ", response.text);
+       }
+      
     } else {
-      alert("failed to send : ",response.text)
+      alert("fill form first please")
     }
-  }
+   
+  };
 
   return (
     <div className="rightside contact">
       <div className="Topform"></div>
-      <form className="downform" action="https://api.web3forms.com/143dce79-4028-4cfe-b340-b08b488c7f3b">
+      <form
+        className="downform"
+        action="https://api.web3forms.com/143dce79-4028-4cfe-b340-b08b488c7f3b"
+      >
         <h1>Let's Get In Touch</h1>
-        <input type="hidden" name="access_key" value="143dce79-4028-4cfe-b340-b08b488c7f3b" />
         <input
           type="text"
           placeholder="Enter your name hear"
-          required name="name"
+          required
+          name="name"
           onChange={handlechange}
+          ref={nameRef}
         />
         <input
           type="number"
@@ -51,6 +68,7 @@ function Contact() {
           placeholder="Enter mobile number"
           required
           onChange={handlechange}
+          ref={numRef}
         />
         <textarea
           name="msg"
@@ -58,10 +76,14 @@ function Contact() {
           placeholder="Message hear"
           required
           onChange={handlechange}
+          ref={msgRef}
         ></textarea>
-        <button type="submit" onClick={handleSubmit}> Submit </button>
+        <button type="submit" onClick={handleSubmit}>
+          {" "}
+          Submit{" "}
+        </button>
         <div className="social-media">
-        <Social />
+          <Social />
         </div>
       </form>
     </div>
