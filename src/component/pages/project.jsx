@@ -14,14 +14,14 @@ function Project() {
       about:
         "Fylo is a  langing page for a company  i made this pade complete responsive for mobile devics",
       tech: "Html,css, javascript",
-      url: "rahulgurjar247247@netlify.app",
+      url: "https://rahulgurjar247247.netlify.app",
     },
     {
       name: "Easy bank landing page",
       about:
         "This is a landing page for Easy bank , this is a complete responsive landing page   ",
       tech: "Html, css, javascript",
-      url: "rahulgurjar-easybank.netlify.app",
+      url: "https://rahulgurjar-easybank.netlify.app",
     },
   ];
   
