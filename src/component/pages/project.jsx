@@ -3,6 +3,29 @@ import ProjectCard from "../otherCompo/projectcard/projectBox";
 function Project() {
   const Allproject = [
     {
+      name: "Comrade",
+      about: "Comrade is a social media app inspired by twitter",
+      tech: "REACTJS, NODEJS, EXPRESSJS, MONGODB, JWC , BCRYPT",
+      url: "https://github.com/rahulgurjar247/Course-Selling-Website-Mern",
+      status: "On Progress...",
+    },
+    {
+      name: "Course selling Site",
+      about:
+        "A website where user can signIn/signUp and view course card and have ability to purchase these course  ",
+      tech: "REACTJS, NODEJS, EXPRESSJS, MONGODB, JWC ",
+      url: "https://github.com/rahulgurjar247/Course-Selling-Website-Mern",
+      status: "On Progress...",
+    },
+    {
+      name: "Password manager",
+      about:
+        "Paaword manager can help you to save your password in your browser in a secure way",
+      tech: "REACTJS, NODEJS, EXPRESSJS, MONGODB, JWC ",
+      url: "https://github.com/rahulgurjar247/Course-Selling-Website-Mern",
+      status: "On Progress...",
+    },
+    {
       name: "Random number && Rock paper scissor",
       about:
         "This is a simple project which i made using C language in My first sem in this game you can play random rumber game or rock paper scissior ",
@@ -24,15 +47,21 @@ function Project() {
       url: "https://rahulgurjar-easybank.netlify.app",
     },
   ];
-  
+
   return (
     <div className="rightside project">
       <h1>List of Project</h1>
       {Allproject.map((proj) => {
         return (
-          
-          <ProjectCard heading={proj.name} about={ proj.about} tech={proj.tech} url={proj.url} key={proj.name} />          
-        )
+          <ProjectCard
+            heading={proj.name}
+            about={proj.about}
+            tech={proj.tech}
+            url={proj.url}
+            key={proj.name}
+            status={proj.status}
+          />
+        );
       })}
     </div>
   );

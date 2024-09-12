@@ -6,16 +6,24 @@ import Draggable from "gsap/Draggable";
 
 gsap.registerPlugin(ScrollTrigger,Draggable,Flip)
 
-const ProjectCard = ({heading , about,tech,url="#"}) => {
+const ProjectCard = ({ heading, about, tech, status, url = "#" }) => {
   return (
     <>
       <div className="card">
         <h1>{heading}</h1>
         <p>{about}</p>
         <p>
-          Technologies Used : <span id="technology
-          "> {tech}</span>
+          Technologies Used :{" "}
+          <span
+            id="technology
+          "
+          >
+            {" "}
+            {tech}
+          </span>
         </p>
+
+        {status ? <p>{status}</p> : ""}
         <li>
           <a href={url}>Check out project... </a>
         </li>
