@@ -19,7 +19,7 @@ body{
     align-items: center;
     justify-items:center ;
     gap: 100px;
-    padding: 150px 80px 0px 150px ;
+    padding: 100px 80px 0px 150px ;
     padding-left: 120px;
 }
 .homesocial{
@@ -76,7 +76,7 @@ body{
     gap: 20px;
 } 
 .about{
-    padding: 150px 100px;
+    padding: 70px 100px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -109,7 +109,7 @@ body{
 
 /* skill style goes hear */
  .skill{
-    padding: 150px;
+    padding: 100px;
  }
  .skill .techstack .imagestech{
     display: flex;
@@ -120,7 +120,7 @@ body{
  /* project style */
 
  .project{
-    padding: 100px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +210,7 @@ textarea{
 .Home{
     flex-direction:column-reverse ;
     gap: 20px;
-    padding: 100px 50px ;
+    padding: 90px 50px ;
 }
 .Home .left{
     gap: 15px;
@@ -229,8 +229,9 @@ textarea{
 }
 /* bro about style after this point */
 .about{
-    padding: 130px 30px;
+    padding: 90px 30px;
     gap: 20px;
+    transition: all ease-in 0.3s;
 }
 .about .info{
     gap: 15px;
@@ -240,13 +241,14 @@ textarea{
 }
 /* skill style goes hear */
  .skill{
-    padding: 150px 50px;
+    padding: 130px 50px;  
+    
  }
  
  /* project style */
 
  .project{
-    padding: 100px 30px;
+    padding: 100px 20px;
  }
 
  /* cnotact style */

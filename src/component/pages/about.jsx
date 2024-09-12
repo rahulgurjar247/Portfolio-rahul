@@ -10,12 +10,11 @@ function About() {
           <p>
             Hello , My name is rahul gurajr. I am a Passinate software devloper{" "}
             <br />
-            from Rajasthan/india , Currently I am working on my Frontend Skill
+            from Rajasthan/india , Currently I am Bulding a Mernstack project
           </p>
           <p>
-            I love working on a variety of technologies Like Web Development
-            Data structure and algorithms. <br /> I like to make real world
-            project .
+            I love bulding a responsive webApp and solving Complex problem. I
+            like to make real world project and working with Team
           </p>
         </div>
         <Techstack />
