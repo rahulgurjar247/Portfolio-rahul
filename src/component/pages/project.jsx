@@ -1,4 +1,5 @@
 import ProjectCard from "../otherCompo/projectcard/projectBox";
+import leftside from "../../assets/leftSide.png";
 
 function Project() {
   const Allproject = [
@@ -6,8 +7,8 @@ function Project() {
       name: "Comrade",
       about: "Comrade is a social media app inspired by twitter",
       tech: "REACTJS, NODEJS, EXPRESSJS, MONGODB, JWC , BCRYPT",
-      url: "https://github.com/rahulgurjar247/Course-Selling-Website-Mern",
-      status: "On Progress...",
+      url: "https://github.com/rahulgurjar247/Comrade",
+      status: `On Progress...👈`,
     },
     {
       name: "Course selling Site",
@@ -15,15 +16,15 @@ function Project() {
         "A website where user can signIn/signUp and view course card and have ability to purchase these course  ",
       tech: "REACTJS, NODEJS, EXPRESSJS, MONGODB, JWC ",
       url: "https://github.com/rahulgurjar247/Course-Selling-Website-Mern",
-      status: "On Progress...",
+      status: "On Progress...👈",
     },
     {
       name: "Password manager",
       about:
         "Paaword manager can help you to save your password in your browser in a secure way",
       tech: "REACTJS, NODEJS, EXPRESSJS, MONGODB, JWC ",
-      url: "https://github.com/rahulgurjar247/Course-Selling-Website-Mern",
-      status: "On Progress...",
+      url: "https://github.com/rahulgurjar247/Password-Manager",
+      status: "On Progress...👈",
     },
     {
       name: "Random number && Rock paper scissor",

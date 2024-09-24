@@ -8,13 +8,13 @@ function About() {
         <div className="info">
           <h1>About</h1>
           <p>
-            Hello , My name is rahul gurajr. I am a Passinate software devloper{" "}
+            Hello , My name is rahul gurjar. I am a Passinate software devloper{" "}
             <br />
-            from Rajasthan/india , Currently I am Bulding a Mernstack project
+            from Rajasthan/india, Currently I am Bulding a Mernstack project.
           </p>
           <p>
-            I love bulding a responsive webApp and solving Complex problem. I
-            like to make real world project and working with Team
+            I love bulding a responsive webApp and solving Complex problem.I
+            like to make real world project and working with Team.
           </p>
         </div>
         <Techstack />

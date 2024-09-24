@@ -25,7 +25,7 @@ const ProjectCard = ({ heading, about, tech, status, url = "#" }) => {
 
         {status ? <p>{status}</p> : ""}
         <li>
-          <a href={url}>Check out project... </a>
+          <a href={url}>Check out project...👈 </a>
         </li>
       </div>
     </>

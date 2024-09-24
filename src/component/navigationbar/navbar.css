@@ -72,7 +72,7 @@ nav ul li :hover {
     transition: all ease 1s;
   }
   .hamburgerBar{
-    display: block;
+    display: none;
     position: absolute;
     /* position: sticky; */
     right: -200px;
