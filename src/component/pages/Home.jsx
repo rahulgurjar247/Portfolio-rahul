@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import icon from "../../assets/developer.png"
-import rahulgurjar from "../../assets/RahulGurjar.pdf";
+import rahulgurjar from "../../assets/RahulGurjarResume.pdf";
 
 const add = {
   address: icon,
@@ -10,7 +10,7 @@ function Home() {
     <div className="rightside ">
       <div className="Home">
         <div className="left">
-          <h2>Hi there,</h2>
+          <h2>Hi there,👋</h2>
           <h1>
             My name is <span>Rahul gurjar</span> <br />I am a Full-Stack
             Developer
@@ -18,12 +18,12 @@ function Home() {
           <div>
             <button id="getInTouch">
               <li>
-                <NavLink to="/contact">Get In Touch </NavLink>
+                <NavLink to="/project">Projects</NavLink>
               </li>
             </button>
             <button id="ResumeDownload">
-              <a href={rahulgurjar} download="rahulgurjar">
-                Download resume
+              <a href={rahulgurjar} download="Rahul_Gurjar_Resume">
+                Download Resume
               </a>
             </button>
           </div>
