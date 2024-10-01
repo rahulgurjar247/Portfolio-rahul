@@ -61,7 +61,7 @@ nav ul li :hover {
   }
   .hamburger {
     margin-right: 20px;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 20px;
     z-index: 5;
@@ -73,11 +73,11 @@ nav ul li :hover {
   }
   .hamburgerBar{
     display: none;
-    position: absolute;
+    position: fixed;
     /* position: sticky; */
     right: -200px;
     width: 200px;
-    height: 100vh;
+    min-height: 100vh ;
     padding-top: 100px;
     z-index: 1;
     background-color: var(--nav-color);

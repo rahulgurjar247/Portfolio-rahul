@@ -74,22 +74,16 @@ const Navbar = () => {
       <div className="hamburgerBar" ref={hamburgerBar}>
         <ul onClick={removeNavbar}>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <a href="#about">About</a>
           </li>
           <li>
-            <NavLink to="/skill">Skill</NavLink>
+            <a href="#project">Project</a>
           </li>
           <li>
-            <NavLink to="/project">Project</NavLink>
-          </li>
-          <li>
-            <NavLink to="achievement">Achievement</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

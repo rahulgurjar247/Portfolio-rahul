@@ -47,7 +47,7 @@ function Contact() {
   };
 
   return (
-    <div className="rightside contact">
+    <div className="rightside contact" id="contact">
       <div className="Topform"></div>
       <form
         className="downform"

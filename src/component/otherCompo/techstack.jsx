@@ -15,8 +15,12 @@ const Techstack = () => {
   return (
     <>
       <div className="techstack">
-        <h1>Tech Stack</h1>
+        <h1>My Skill</h1>
         <div className="imagestech">
+          <img
+            src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+            alt="Typescript"
+          />
           <img src={javascript} alt="" />
           <img src={python} alt="" />
           <img src={react} alt="" />
@@ -26,7 +30,11 @@ const Techstack = () => {
           <img src={express} alt="" />
           <img src={vscode} alt="" />
           <img src={MonGoDB} alt="" />
-          <img src={postgres} alt="" />
+          {/* <img src={postgres} alt="" /> */}
+          <img
+            src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
+            alt="AWS"
+          />
           <img src={Postman} alt="" />
         </div>
       </div>

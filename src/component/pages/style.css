@@ -206,11 +206,13 @@ textarea{
 @media screen and (max-width:600px) {
     .rightside{
     margin-left: 0%;
+    /* margin-top: 50px; */
 }
 .Home{
     flex-direction:column-reverse ;
     gap: 20px;
-    padding: 90px 50px ;
+    padding: 30px 50px ;
+    padding-top: 90px;
 }
 .Home .left{
     gap: 15px;
@@ -229,8 +231,8 @@ textarea{
 }
 /* bro about style after this point */
 .about{
-    padding: 90px 30px;
-    gap: 20px;
+    padding: 20px 30px;
+    gap: 40px;
     transition: all ease-in 0.3s;
 }
 .about .info{
@@ -248,7 +250,7 @@ textarea{
  /* project style */
 
  .project{
-    padding: 100px 20px;
+    padding: 70px 20px;
  }
 
  /* cnotact style */
@@ -274,7 +276,7 @@ textarea{
 
  /* //contact  style*/
  .contact{
-    padding: 140px 100px;
+    padding: 0px 100px 50px 100px;
 } 
 .contact .downform{
     width: 300px;

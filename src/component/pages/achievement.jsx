@@ -1,6 +1,6 @@
 function Achievement() {
   return (
-    <div className="rightside achievement">
+    <div id="achievement" className="rightside achievement">
       <h1>Achievement</h1>
       <div>
         <div>

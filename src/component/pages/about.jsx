@@ -3,7 +3,7 @@ import Techstack from "../otherCompo/techstack";
 // }
 function About() {
   return (
-    <div className="rightside">
+    <div className="rightside " id="about">
       <div className="about">
         <div className="info">
           <h1>About</h1>
@@ -19,7 +19,7 @@ function About() {
         </div>
         <Techstack />
         <div className="socialmedia">
-          <h1>Hear are MY social media</h1>
+          <h1>Social media</h1>
           <Social />
         </div>
       </div>

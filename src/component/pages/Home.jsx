@@ -1,13 +1,15 @@
 import { NavLink } from "react-router-dom";
 import icon from "../../assets/developer.png"
 import rahulgurjar from "../../assets/RahulGurjarResume.pdf";
+import { useIsMobile } from "../hooks/isMobileHook.jsx";
 
 const add = {
   address: icon,
 };
 function Home() {
+  const isMobile = useIsMobile();
   return (
-    <div className="rightside ">
+    <div className="rightside " id="home">
       <div className="Home">
         <div className="left">
           <h2>Hi there,👋</h2>
@@ -18,7 +20,11 @@ function Home() {
           <div>
             <button id="getInTouch">
               <li>
-                <NavLink to="/project">Projects</NavLink>
+                {isMobile ? (
+                  <a href="#project">projects</a>
+                ) : (
+                  <NavLink to="/project">Projects</NavLink>
+                )}
               </li>
             </button>
             <button id="ResumeDownload">

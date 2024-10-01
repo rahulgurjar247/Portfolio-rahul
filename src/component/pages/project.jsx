@@ -6,7 +6,7 @@ function Project() {
     {
       name: "Comrade",
       about: "Comrade is a social media app inspired by twitter",
-      tech: "REACTJS, NODEJS, EXPRESSJS, MONGODB, JWC , BCRYPT",
+      tech: "REACTJS, NODEJS, EXPRESSJS, MONGODB, JWT , BCRYPT",
       url: "https://github.com/rahulgurjar247/Comrade",
       status: `On Progress...👈`,
     },
@@ -14,7 +14,7 @@ function Project() {
       name: "Course selling Site",
       about:
         "A website where user can signIn/signUp and view course card and have ability to purchase these course  ",
-      tech: "REACTJS, NODEJS, EXPRESSJS, MONGODB, JWC ",
+      tech: "REACTJS, NODEJS, EXPRESSJS, MONGODB, JWT ",
       url: "https://github.com/rahulgurjar247/Course-Selling-Website-Mern",
       status: "On Progress...👈",
     },
@@ -22,7 +22,7 @@ function Project() {
       name: "Password manager",
       about:
         "Paaword manager can help you to save your password in your browser in a secure way",
-      tech: "REACTJS, NODEJS, EXPRESSJS, MONGODB, JWC ",
+      tech: "REACTJS, NODEJS, EXPRESSJS, MONGODB, JWT ",
       url: "https://github.com/rahulgurjar247/Password-Manager",
       status: "On Progress...👈",
     },
@@ -50,7 +50,7 @@ function Project() {
   ];
 
   return (
-    <div className="rightside project">
+    <div className="rightside project " id="project">
       <h1>List of Project</h1>
       {Allproject.map((proj) => {
         return (
