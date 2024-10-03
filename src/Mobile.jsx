@@ -5,6 +5,7 @@ import About from "./component/pages/about";
 import Project from "./component/pages/project";
 import Contact from "./component/pages/contact";
 import Achievment from "./component/pages/achievement";
+import Footer from "./component/pages/Footer";
 
 const MobileView = () => {
   return (
@@ -14,6 +15,7 @@ const MobileView = () => {
       <About />
       <Project />
       <Contact />
+      <Footer />
     </div>
   );
 };
