@@ -14,17 +14,12 @@ function Home() {
         <div className="left">
           <h2>Hi there,👋</h2>
           <h1>
-            My name is <span>Rahul gurjar</span> <br />I am a Full-Stack
-            Developer
+            My Self <span>Rahul gurjar</span> <br />I am a Full-Stack Developer
           </h1>
           <div>
             <button id="getInTouch">
               <li>
-                {isMobile ? (
-                  <a href="#project">projects</a>
-                ) : (
-                  <NavLink to="/project">Projects</NavLink>
-                )}
+                <a href="#project">projects</a>
               </li>
             </button>
             <button id="ResumeDownload">

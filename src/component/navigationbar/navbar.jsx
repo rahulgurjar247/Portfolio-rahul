@@ -37,29 +37,23 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="navImg">
+        {/* <div className="navImg">
           <img src={icon} alt="devloper rahul" />
           <h4>Rahul gurjar</h4>
-        </div>
+        </div> */}
 
         <ul>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <a href="#about">About</a>
           </li>
           <li>
-            <NavLink to="/skill">Skill</NavLink>
+            <a href="#project">Project</a>
           </li>
           <li>
-            <NavLink to="/project">Project</NavLink>
-          </li>
-          <li>
-            <NavLink to="achievement">Achievement</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -71,6 +65,7 @@ const Navbar = () => {
           id="hamburger"
         />
       </div>
+
       <div className="hamburgerBar" ref={hamburgerBar}>
         <ul onClick={removeNavbar}>
           <li>

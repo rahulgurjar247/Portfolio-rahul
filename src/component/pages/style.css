@@ -4,12 +4,13 @@
     --text-color : rgb(212 234 233);
 
 }   
-.rightside{
-    margin-left: 18%;
-}
+
 body{
     background-color: #082e4e;
     color: var(--text-color);
+}
+html{
+    scroll-behavior: smooth;
 }
 
 /* home page style  */
@@ -19,8 +20,8 @@ body{
     align-items: center;
     justify-items:center ;
     gap: 100px;
-    padding: 100px 80px 0px 150px ;
-    padding-left: 120px;
+    padding: 100px 0px 0px 250px ;
+    /* padding-left: 120px; */
 }
 .homesocial{
     padding: 30px 80px;
@@ -62,7 +63,7 @@ body{
     background-color: inherit;
 }
 .devloper{
-    width: 300px;
+    width: 200px;
 }
 
 
@@ -76,9 +77,11 @@ body{
     gap: 20px;
 } 
 .about{
-    padding: 70px 100px;
+    padding-top: 70px;
+    padding-left: 250px;
     display: flex;
     flex-direction: column;
+    align-items: left;
     gap: 40px;
 }
 .about h1{
@@ -127,6 +130,12 @@ body{
     gap: 40px;
     flex-wrap: wrap;
  }
+ .projectList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+ }
 
  /* cnotact style */
 
@@ -154,7 +163,7 @@ body{
 .contact{
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding: 100px 0px;
     align-items: center;    
 } 
 .contact textarea{
@@ -203,6 +212,29 @@ textarea{
     align-items: center;
 }
 
+.footer{
+    /* width: 100vw; */
+    text-align: center;
+    background-color: rgb(14 39 60);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer  img{
+    width: 15px;
+}
+.footerImage{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.footerImage span{
+    display: flex;
+    align-items:center ;
+}
+
 @media screen and (max-width:600px) {
     .rightside{
     margin-left: 0%;
@@ -211,7 +243,7 @@ textarea{
 .Home{
     flex-direction:column-reverse ;
     gap: 20px;
-    padding: 30px 50px ;
+    padding: 30px 20px ;
     padding-top: 90px;
 }
 .Home .left{
