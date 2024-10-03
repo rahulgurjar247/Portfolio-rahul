@@ -1,15 +1,32 @@
 .card{
-    width: 400px;
+    width: 350px;
     display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 10px;
     flex-direction: column;
-    gap: 20px;
-    padding: 30px 30px  50px 30px;
+    /* padding: 30px 30px  50px 30px; */
     background-color: rgb(14 39 60);
-    border-left:2px solid  ;
+    /* border-left:2px solid  ; */
 }
-.card li{
+.projectImage img{
+    height: 180px;
+
+} 
+.project-data{
+    padding: 10px 30px  30px 30px;
+       display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.project-data li{
     list-style: none;
-    border-color: white;
+    /* border-color: white; */
+    background-color:#eab41e ;
+    color: black;
+}
+.project-data li a{
+    color: black;
 }
 .card h1{
     color: #eab41e;
@@ -24,14 +41,16 @@
 @media screen and (max-width:600px) {
     .card{
     width: 300px;
-    gap: 15px;
-    padding: 30px 15px  50px 15px;
+    gap: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* padding: 30px 15px  50px 15px; */
     background-color: rgb(14 39 60);
-    border-left:2px solid  ;
+    /* border-left:2px solid  ; */
 }
 .card li{
     list-style: none;
-    border-color: white;
+    /* border-color: white; */
 }
 .card h1{
     color: #eab41e;
@@ -43,4 +62,8 @@
 .card li:hover{
     cursor: pointer;
 }
+}
+
+.projectImage{
+    width: 100%;
 }

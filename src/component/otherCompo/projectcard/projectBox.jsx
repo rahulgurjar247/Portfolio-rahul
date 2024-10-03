@@ -1,32 +1,43 @@
 import "./projectcard.css"
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import Flip from "gsap/Flip";
-import Draggable from "gsap/Draggable";
 
-gsap.registerPlugin(ScrollTrigger,Draggable,Flip)
-
-const ProjectCard = ({ heading, about, tech, status, url = "#" }) => {
+const ProjectCard = ({
+  heading,
+  about,
+  tech,
+  status,
+  url = "#",
+  ProjectImage = false,
+}) => {
   return (
     <>
       <div className="card">
-        <h1>{heading}</h1>
-        <p>{about}</p>
-        <p>
-          Technologies Used :{" "}
-          <span
-            id="technology
+        {ProjectImage ? (
+          <div className="projectImage">
+            <img src={ProjectImage} className="projectImage" />
+          </div>
+        ) : (
+          <div></div>
+        )}
+        <div className="project-data">
+          <h1>{heading}</h1>
+          <p>{about}</p>
+          <p>
+            Technologies Used :{" "}
+            <span
+              id="technology
           "
-          >
-            {" "}
-            {tech}
-          </span>
-        </p>
+            >
+              {" "}
+              {tech}
+            </span>
+          </p>
 
-        {status ? <p>{status}</p> : ""}
-        <li>
-          <a href={url}>Check out project...👈 </a>
-        </li>
+          {status ? <p>{status}</p> : ""}
+          <li>
+            <a href={url}>Check out project...👈 </a>
+          </li>
+        </div>
       </div>
     </>
   );
